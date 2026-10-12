@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calendar-card">
+        <header class="calendar-header">
+            <button id="prevBtn">&lt;</button>
+            <h2 id="monthYearDisplay"></h2>
+            <button id="nextBtn">&gt;</button>
+        </header>
+
+        <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+        </div>
+
+        <div class="days-grid" id="daysContainer">
+            <!-- Dynamic calendar days will render here -->
+        </div>
+
+        <div class="event-panel">
+            <h3>Selected Date</h3>
+            <p id="selectedDateText">Click a date to view or add details.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
